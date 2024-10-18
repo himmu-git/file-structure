@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import useDirectoryDispatch from "../context/useDirectoryDispatch";
-// abhishek@travenues.com
 const RenderFileFolder = ({ folderData, data, parentFolderId }) => {
   const dispatch = useDirectoryDispatch();
   const { isFile, folderName, folderId, fileId, fileName, fileFolders } =
