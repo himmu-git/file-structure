@@ -27,7 +27,7 @@ const RenderFileFolder = ({ folderData, data, parentFolderId }) => {
                   parentFolderId: parentFolderId,
                   fileId: Math.floor(Math.random(0, 1) * 100),
                   isFile: true,
-                  fileName: `untitled folder ${Math.floor(
+                  fileName: `untitled file ${Math.floor(
                     Math.random(1, 100) * 100
                   )}`,
                 },
@@ -49,7 +49,7 @@ const RenderFileFolder = ({ folderData, data, parentFolderId }) => {
                   parentFolderId: folderId,
                   folderId: Math.floor(Math.random(0, 1) * 100),
                   isFile: false,
-                  folderName: `newFile${Math.floor(Math.random(1, 100) * 100)}`,
+                  folderName: `untitled folder ${Math.floor(Math.random(1, 100) * 100)}`,
                   fileFolders: [],
                 },
               });

@@ -35,7 +35,7 @@ function tasksReducer(directoryData, action) {
         const filterData = directoryData.folderData[
           parentFolderId
         ].fileFolders.filter((data) => {
-          return id === data.folderId;
+          return id != data;
         });
         directoryData.folderData[parentFolderId].fileFolders = [...filterData];
         delete directoryData.folderData[id];
